@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inbox Page</title>
+	<link rel="stylesheet" type="text/css" href="./inbox.css">
+</head>
+<body>
+    <nav>
+    	<ul>
+    		<li><a href="#all">Inbox</a></li>
+    		<li><a href="#done">Done</a></li>
+    		<li><a href="#responded">Responded</a></li>
+    		<li><a href="#delegate">Delegate</a></li>
+    		<li><a href="#defer">Defer</a></li>
+    		<li id="signout"><a href="#signout">Signout</a></li>
+    	</ul>
+    </nav>
+	<table class="email">
+		<theasd>
+			<tr>
+				<th>From</th>
+				<th>Subject</th>
+				<th>Date</th>
+			</tr>
+		</thead>
+		<!-- add error support -->
+        	    <tbody>
+            		<% @array.each do |mail| %>
+            				<tr>
+								<td> <%= mail[:from] 	%> </td>
+								<td> <%= mail[:subject] %> </td>
+								<td> <%= mail[:date] 	%> </td>
+							</tr>
+					<% end %>
+				</tbody>
+	</table>
+<script src="public/javascripts/inbox.js"></script>
+</body>
+</html>

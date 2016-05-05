@@ -1,0 +1,66 @@
+@import url(http://fonts.googleapis.com/css?family=Patua+One|Open+Sans);
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7bd8b1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;  
+}
+
+
+a:hover:not(.active) {
+  background-color: #4c9073;
+}
+
+.email {
+  border-collapse: collapse;
+  background:#fff;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.email thead tr {
+  background:#8ea7b6;
+}
+
+.email thead th {
+  font-family: 'Patua One', cursive;
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  text-align:left;
+  padding:20px;
+  border-top:1px solid #858d99;
+}
+
+.email tbody tr:hover {
+    background: #f4f4f4;
+}
+
+.email tbody td {
+  font-family: 'Open Sans', san-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+}
