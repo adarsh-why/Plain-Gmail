@@ -1,0 +1,8 @@
+<h3> Hello Home</h3>
+
+<% @gmail.inbox.emails.each do |mail| %>
+	<p><%= "Subject :- #{mail.subject}" %></p>
+	<p><%= "From :- #{mail.message.from}" %></p>
+	<p><%= "From :- #{mail.message.body}" %></p>
+	<p><%= "Date :- #{Date.parse(mail.date)}" %></p>
+<% end %>
